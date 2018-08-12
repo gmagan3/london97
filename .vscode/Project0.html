@@ -3,6 +3,7 @@
     <head>
         <title>Best Knicks News</title>
         <title>My Web Page!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <style>
                 table {
@@ -19,15 +20,30 @@
     
                 th {
                     background-color: lightgray;
-                
-
-                    
+                }
+                img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 10%;
                 }
                 
+            @media (min-width: 500px) {
+                h1::before {
+                    content: "Welcome to the Best Site for Knicks Fans!";
+                }
+            }
+
+            @media (max-width: 499px) {
+                h1::before {
+                    content: "Welcome to Knicks News!";
+                    
+                }
+            }  
             </style>
     </head>
     <body>
-        <h1>Top Knicks Players </h1>
+        <h1>Best Knicks of All Time </h1>
         <table>
             <tr>
                 <th> Player Name</th>
@@ -69,6 +85,14 @@
             <li><a href="https://en.wikipedia.org/wiki/Carmelo_Anthony">Carmelo Anthony</a> </li>
             <li><a href="https://en.wikipedia.org/wiki/Bernard_King"> Bernard King </a>  </li>
         
-        <img src="https://officialpsds.com/imageview/7z/p0/7zp0m7_large.png?1521316458" alt="Knicks" width="300" height="200">
+        <h2> "Who do you think is the Best Knicks Player?</h2>
+        <div>
+                Favorite Player?
+                <input name="Player" type="radio" value="Walt">Walt Frazier
+                <input name="Player" type="radio" value="Carmelo"> Carmelo Anthony
+                <input name="Player" type="radio" value="Bernard"> Bernard King
+                <input name="Player" type="radio" value="Patrick"> Patrick Ewing
+        
+        <img src="https://officialpsds.com/imageview/7z/p0/7zp0m7_large.png?1521316458" alt="Knicks" width="200" height="100">
     </body>
 </html>
